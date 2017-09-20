@@ -1,22 +1,17 @@
-# Compiled class file
-*.class
+import java.util.Scanner;
+public class Exercise5 {
 
-# Log file
-*.log
+	public static void main(String[] args) {
+		Scanner kb = new Scanner(System.in);
+		System.out.print("Enter the mass in Kilograms: ");
+		String answer = kb.nextLine();
+		double kilos = Double.parseDouble(answer);
+		double joules = (3.0*100000000);
+		
+		System.out.println("The eneregy produced in Joules is = " + kilos*joules*joules);
+		System.out.println("The number of 100-watt light bulbs powered = " + (((kilos*joules*joules)/(360000))));
+		
+		
+	}
 
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+}
